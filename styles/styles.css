@@ -1,0 +1,56 @@
+.flex-container{
+    display: flex;
+}
+.flex-container div{
+    background-color: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    /*flex: 1 1 0%;*/
+    /*added width in example 2 and changes flex-basis to auto*/
+    flex: 1 1 auto;
+    width: 250px;
+}
+.flex-container .two{
+    /*flex: 2 1 0%;*/
+    /*the second example did use the above properties*/
+    flex-shrink: 0;
+}
+/*assignment: from mdn*/
+*{
+    box-sizing: border-box;
+}
+.shelves{
+    background: #f4f7f8;
+    resize: horizontal;
+    overflow: hidden;
+    display: flex;
+    margin: 1em;
+}
+.book{
+    margin: 1em;
+    padding: 0.5em;
+    width: 100px;
+    min-width: 0;
+    background-color: #1b5385;
+    color: white;
+    font-family: monospace;
+    font-size: 13px;
+}
+.initial{
+    flex: initial;
+}
+.auto{
+    flex: auto;
+}
+.none{
+    flex: none;
+}
+.four{
+    flex: 4;
+}
+.two{
+    flex: 2;
+}
+.one{
+    flex: 1;
+}
